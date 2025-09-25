@@ -1,0 +1,15 @@
+CREATE TABLE proveedores (
+    id BIGSERIAL PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE categorias (
+    id BIGSERIAL PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE productos (
+    id BIGSERIAL PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL
+);
